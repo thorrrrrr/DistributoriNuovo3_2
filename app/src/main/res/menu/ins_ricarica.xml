@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/Home_id" android:orderInCategory="100" android:title="Home"/>
+    <item android:id="@+id/Exit_id" android:orderInCategory="400" android:title="Esci"/>
+    <item android:id="@+id/Login_id" android:orderInCategory="500" android:title="Log Out"/>
+</menu>

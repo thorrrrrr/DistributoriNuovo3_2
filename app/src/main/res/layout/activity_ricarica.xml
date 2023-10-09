@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ricarica_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:logo="@drawable/banner_img"
+        app:menu="@menu/ricarica"
+        app:title="@string/app_name" />
+
+    <TextView
+        android:id="@+id/Ricarica_title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ricarica_toolbar"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/black"
+        android:gravity="center"
+        android:text="@string/ricariche_menu_title"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/formDescMacchinaListino_id"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Ricarica_title_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/formRicarica_id"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formDescMacchinaListino_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/scegliArticolo"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <CheckBox
+        android:id="@+id/Tutto_Listino"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formRicarica_id"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="#ffffff"
+        android:button="@drawable/mycheckbox"
+        android:text="@string/listino_totale_checkbox_caption"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal|bold|italic" />
+
+    <Spinner
+        android:id="@+id/spinnerCategoria"
+        style="@style/Widget.AppCompat.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/Tutto_Listino"
+        android:layout_alignBottom="@+id/Tutto_Listino"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@id/Tutto_Listino"
+        android:background="#ffffff"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:prompt="@string/scegliCategoria"
+        android:spinnerMode="dropdown"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <ListView
+        android:id="@+id/ListinoClienti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Exit_button"
+        android:layout_below="@+id/spinnerCategoria"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="#fbfbfb" />
+
+    <Button
+        android:id="@+id/Exit_button"
+        style="@android:style/Widget.Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:text="@string/Exit_button_label" />
+
+    <Button
+        android:id="@+id/EleRic_button"
+        style="@android:style/Widget.Button"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:text="@string/EleRic_button_label" />
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#000000">-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Exit_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:text="@string/Exit_button_label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/EleRic_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:text="@string/EleRic_button_label" />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/ListinoClienti"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/Exit_button"-->
+<!--        android:layout_below="@+id/spinnerCategoria"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="#fbfbfb" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/formDescMacchinaListino_id"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="#ffffff"-->
+<!--        android:gravity="center"-->
+<!--        android:text=""-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/formRicarica_id"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/formDescMacchinaListino_id"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="#000000"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/scegliArticolo"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinnerCategoria"-->
+<!--        style="@style/Widget.AppCompat.Spinner"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignTop="@+id/Tutto_Listino"-->
+<!--        android:layout_alignBottom="@+id/Tutto_Listino"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:background="#ffffff"-->
+<!--        android:drawSelectorOnTop="true"-->
+<!--        android:gravity="center"-->
+<!--        android:prompt="@string/scegliCategoria"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="normal|bold|italic"-->
+<!--        app:spinnerMode="dropdown" />-->
+
+<!--    <CheckBox-->
+<!--        android:id="@+id/Tutto_Listino"-->
+<!--        android:layout_width="150dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/formRicarica_id"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:background="#ffffff"-->
+<!--        android:button="@drawable/mycheckbox"-->
+<!--        android:text="  Listino Totale"-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="16sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+<!--</RelativeLayout>-->

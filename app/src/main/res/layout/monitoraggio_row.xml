@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingLeft="8dp"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    android:scrollbars="vertical">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#fbfbfb"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/cliente"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#ff33b5e5"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/idmacchina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cliente"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/idtipomacchina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cliente"
+                android:textColor="#000000"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/idtipomanutenzione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cliente"
+                android:textColor="#000000"
+                android:visibility="gone" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/modello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:background="#fbfbfb"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tipomacchina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfbfb"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/descrizione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#ffff4444"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#ffffff"
+                android:textSize="20sp">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp" />
+
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/lblbattuteattuali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Attuali"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/lblMaxBatMan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Massimo"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic" />
+
+            <TextView
+                android:id="@+id/lblscadenza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000000"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:text="Scadenza"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="normal|bold|italic">
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp">
+
+            <TextView
+                android:id="@+id/battuteattuali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfbfb"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/battutemanutenzione"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfbfb"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/datascadenza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fbfbfb"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:textColor="#000000"
+                android:textSize="20sp">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+</ScrollView>

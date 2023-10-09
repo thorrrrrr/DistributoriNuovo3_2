@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/utility_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:logo="@drawable/banner_img"
+            app:menu="@menu/utility"
+            app:title="@string/app_name" />
+
+        <TextView
+            android:id="@+id/formLogin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="@string/utilita"
+            android:textSize="20sp"
+            android:textStyle="normal|bold|italic" />
+
+        <Button
+            android:id="@+id/Settings_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/Settings_button_label"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Listini_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/Listini_button_label"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Trasmetti_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/Trasmetti_button_label"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Reset_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/Reset_button_label"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/Backup_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/Backup_button_label"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/MenuPrinc_button"
+            style="@android:style/Widget.Button"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/menuPrincipale"
+            android:textSize="16sp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/scarica_listini_progressbar_label"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="90dp"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/settings_progressbar_label_text"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ProgressBar-->
+<!--            android:id="@+id/scarica_listini_progressbar"-->
+<!--            style="?android:attr/progressBarStyleHorizontal"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:indeterminate="true"-->
+<!--            android:max="100"-->
+<!--            android:backgroundTint="@color/white"-->
+<!--            android:indeterminateTint="#1a09d6"-->
+<!--            android:layout_marginHorizontal="20dp"-->
+<!--            android:layout_marginTop="20dp"/>-->
+    </LinearLayout>
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/formLogin_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/utilita"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="normal|bold|italic" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Settings_button"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="@string/Settings_button_label"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Listini_button"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/Listini_button_label"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Trasmetti_button"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/Trasmetti_button_label"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/Reset_button"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/Reset_button_label"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/MenuPrinc_button"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="20dp"-->
+<!--            android:text="@string/menuPrincipale"-->
+<!--            android:textSize="16sp" />-->
+<!--    </LinearLayout>-->
+<!--</RelativeLayout>-->

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_fixed_width_major">320dp</dimen>
+    <dimen name="dialog_fixed_width_minor">320dp</dimen>
+    <dimen name="dialog_fixed_height_major">80%</dimen>
+    <dimen name="dialog_fixed_height_minor">100%</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+</resources>

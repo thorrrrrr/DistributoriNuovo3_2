@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mainmenu_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:logo="@drawable/banner_img"
+            app:menu="@menu/menu_principale"
+            app:title="@string/app_name" />
+
+        <TextView
+            android:id="@+id/formLogin_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="25dp"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="@string/menuPrincipale"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="normal|bold|italic" />
+
+        <TextView
+            android:id="@+id/utente_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:text="@string/cliente" />
+
+        <Spinner
+            android:id="@+id/spinnerCliente"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawSelectorOnTop="true"
+            android:prompt="@string/scegliCliente"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:id="@+id/pwd_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:drawSelectorOnTop="true"
+            android:text="@string/distributore" />
+
+        <Spinner
+            android:id="@+id/spinnerDistributore"
+            style="@style/Widget.AppCompat.Spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/scegliDistributore"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Ricariche_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Ricariche_button_label" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <Button
+                android:id="@+id/Ricavi_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Ricavi_button_label" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <Button
+                android:id="@+id/Monitoraggio_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Monitoraggio_button_label" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginStart="45dp"
+            android:layout_marginEnd="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/Utility_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Utility_button_label" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" >
+            </Space>
+
+            <Button
+                android:id="@+id/Exit_button"
+                style="@android:style/Widget.Button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/Exit_button_label" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical">-->
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/linearLayout1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_horizontal"-->
+<!--        android:orientation="vertical">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/formLogin_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:layout_marginBottom="25dp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="@string/menuPrincipale"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="normal|bold|italic" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/utente_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:text="@string/cliente" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerCliente"-->
+<!--            style="@style/Widget.AppCompat.Spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawSelectorOnTop="true"-->
+<!--            android:prompt="@string/scegliCliente"-->
+<!--            app:spinnerMode="dropdown" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pwd_id"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:drawSelectorOnTop="true"-->
+<!--            android:prompt="@string/distributore" />-->
+
+<!--        <Spinner-->
+<!--            android:id="@+id/spinnerDistributore"-->
+<!--            style="@style/Widget.AppCompat.Spinner"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:prompt="@string/scegliDistributore"-->
+<!--            app:spinnerMode="dropdown" />-->
+<!--    </LinearLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Utility_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:layout_toLeftOf="@+id/Ricavi_button"-->
+<!--        android:text="@string/Utility_button_label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Exit_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginBottom="30dp"-->
+<!--        android:text="@string/Exit_button_label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Monitoraggio_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="120dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBaseline="@+id/Ricariche_button"-->
+<!--        android:layout_alignLeft="@+id/Exit_button"-->
+<!--        android:layout_alignRight="@+id/Exit_button"-->
+<!--        android:layout_alignBottom="@+id/Ricariche_button"-->
+<!--        android:text="@string/Monitoraggio_button_label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Ricariche_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/Utility_button"-->
+<!--        android:layout_alignLeft="@+id/Utility_button"-->
+<!--        android:layout_toLeftOf="@+id/Ricavi_button"-->
+<!--        android:text="@string/Ricariche_button_label" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Ricavi_button"-->
+<!--        style="@android:style/Widget.Button"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignBaseline="@+id/Monitoraggio_button"-->
+<!--        android:layout_alignBottom="@+id/Monitoraggio_button"-->
+<!--        android:layout_toLeftOf="@+id/Exit_button"-->
+<!--        android:text="@string/Ricavi_button_label" />-->
+<!--</RelativeLayout>-->

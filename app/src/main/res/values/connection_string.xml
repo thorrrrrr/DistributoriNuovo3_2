@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--
+    <string name="db_indirizzoIp">192.168.1.67</string>
+    <string name="db_nomeBaseDati">pausamaticsrl_dev</string>
+    <string name="db_indirizzoIp">192.168.1.28</string>
+    <string name="db_indirizzoIp">192.168.1.64</string>
+    <string name="db_passwordMySql">admin</string>
+    <string name="db_indirizzoIp">92.223.215.2</string>
+-->
+    <string name="db_indirizzoIp">51.254.114.226</string>
+    <string name="db_porta">3306</string>
+    <string name="db_nomeBaseDati">pausamaticsrl_prod</string>
+    <string name="db_utenteMySql">distributori</string>
+    <string name="db_passwordMySql">tmEeu6BZWSn5WyRV!</string>
+
+    <string name="db_driver">com.mysql.jdbc.Driver</string>
+</resources>

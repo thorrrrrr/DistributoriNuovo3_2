@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ele_ricavi_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:logo="@drawable/banner_img"
+        app:menu="@menu/ele_ricavi"
+        app:title="@string/app_name" />
+
+    <TextView
+        android:id="@+id/formDescMacchinaRicavi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ele_ricavi_toolbar"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <TextView
+        android:id="@+id/formEleRicavi_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formDescMacchinaRicavi_id"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="@string/eleRicavi"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="normal|bold|italic" />
+
+    <ImageButton
+        android:id="@+id/ExitRicavi_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/back_button" />
+
+    <ImageButton
+        android:id="@+id/SelTuttoRicavi_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/selall_button" />
+
+    <ImageButton
+        android:id="@+id/DeSelTuttoRicavi_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/deselall_button" />
+
+    <ImageButton
+        android:id="@+id/Consolida_ric_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/arrowdown_button" />
+
+    <ImageButton
+        android:id="@+id/Elimina_ric_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/recycle_bin_button" />
+
+    <ImageButton
+        android:id="@+id/InsRicavi_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/add_button" />
+
+    <ListView
+        android:id="@+id/elencoRicavi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ExitRicavi_button"
+        android:layout_below="@+id/formEleRicavi_id"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="#fbfbfb" />
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="#000000">-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/formDescMacchinaRicavi_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentTop="true"-->
+<!--        android:background="#ffffff"-->
+<!--        android:gravity="center"-->
+<!--        android:text=""-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/formEleRicavi_id"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/formDescMacchinaRicavi_id"-->
+<!--        android:background="#000000"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/eleRicavi"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="normal|bold|italic" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/ExitRicavi_button"-->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="0dp"-->
+<!--        android:background="#fbfbfb"-->
+<!--        android:text="@string/indietro_button_label"-->
+<!--        android:textColor="#000000" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/SelTuttoRicavi_button"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="40dp"-->
+<!--        android:background="@drawable/selall"-->
+<!--        android:textColor="#000000" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/DeSelTuttoRicavi_button"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentLeft="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginLeft="100dp"-->
+<!--        android:background="@drawable/deselall"-->
+<!--        android:textColor="#000000" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Consolida_ric_button"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="110dp"-->
+<!--        android:background="#fbfbfb"-->
+<!--        android:text="@string/consolida_button_label"-->
+<!--        android:textColor="#000000" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/Elimina_ric_button"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="50dp"-->
+<!--        android:background="@drawable/recyclebin"-->
+<!--        android:textColor="#fbfbfb" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/InsRicavi_button"-->
+<!--        android:layout_width="40dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_alignParentRight="true"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:layout_marginRight="0dp"-->
+<!--        android:background="#fbfbfb"-->
+<!--        android:text="@string/insRicavi_button_label"-->
+<!--        android:textColor="#000000" />-->
+
+<!--    <ListView-->
+<!--        android:id="@+id/elencoRicavi"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_above="@+id/ExitRicavi_button"-->
+<!--        android:layout_below="@+id/formEleRicavi_id"-->
+<!--        android:layout_marginTop="2dp"-->
+<!--        android:layout_marginBottom="2dp"-->
+<!--        android:background="#fbfbfb" />-->
+<!--</RelativeLayout>-->

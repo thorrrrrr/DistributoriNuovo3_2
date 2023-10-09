@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ins_ricarica_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:logo="@drawable/ic_launcher"
+        app:menu="@menu/ins_ricarica"
+        app:title="@string/app_name" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ins_ricarica_toolbar"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fbfbfb"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/formRicarica_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:text="@string/insRicarica"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp"
+                    android:textStyle="normal|bold|italic" />
+
+                <TextView
+                    android:id="@+id/idTipologiaArticolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/etiDescArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:background="#000000"
+                    android:text="@string/descArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/DescArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:background="#ffffff"
+                    android:text="@string/descArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/etiCostoArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#000000"
+                    android:text="@string/costoArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+
+                <TextView
+                    android:id="@+id/etiPvendArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#000000"
+                    android:text="@string/pVendArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/CostoArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#ffffff"
+                    android:text="@string/costoArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/PvendArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:background="#ffffff"
+                    android:text="@string/pVendArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/etiDataArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:background="#000000"
+                    android:drawableLeft="@android:drawable/ic_menu_today"
+                    android:text="@string/dataArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp" />
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/etiQuantitaArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:background="#000000"
+                    android:text="@string/quantitaArticolo"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#ffffff" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edit_quantitaArtInsRic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_span="2"
+                    android:digits="0123456789,."
+                    android:imeOptions="actionSend"
+                    android:inputType="numberDecimal"
+                    android:maxLength="9"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/ExitRicarica_button"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/Exit_button_label" />
+
+                <Button
+                    android:id="@+id/SaveRic_button"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:text="@string/Save_button_label" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</RelativeLayout>
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:background="@color/white">-->
+
+    <!--    <androidx.appcompat.widget.Toolbar-->
+    <!--        android:id="@+id/ins_ricarica_toolbar"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:background="?attr/colorPrimary"-->
+    <!--        android:minHeight="?attr/actionBarSize"-->
+    <!--        android:theme="?attr/actionBarTheme"-->
+    <!--        app:logo="@drawable/ic_launcher"-->
+    <!--        app:menu="@menu/ins_ricarica"-->
+    <!--        app:title="@string/app_name" />-->
+
+    <!--    <ScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@id/ins_ricarica_toolbar"-->
+    <!--        android:scrollbarAlwaysDrawVerticalTrack="true"-->
+    <!--        android:scrollbars="vertical">-->
+
+    <!--        <TableLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:background="#fbfbfb"-->
+    <!--            android:shrinkColumns="*"-->
+    <!--            android:stretchColumns="*">-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow1"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/formRicarica_id"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:gravity="center"-->
+    <!--                    android:text="@string/insRicarica"-->
+    <!--                    android:textColor="#ffffff"-->
+    <!--                    android:textSize="20sp"-->
+    <!--                    android:textStyle="normal|bold|italic" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/idTipologiaArticolo"-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:visibility="gone" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow2"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/etiDescArtInsRic"-->
+    <!--                    android:layout_width="379dp"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:text="@string/descArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#ffffff" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow3"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/DescArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:background="#ffffff"-->
+    <!--                    android:text="@string/descArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#000000" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow4"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/etiCostoArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:text="@string/costoArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#ffffff" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/etiPvendArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:text="@string/pVendArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#ffffff" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow5"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/CostoArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:background="#ffffff"-->
+    <!--                    android:text="@string/costoArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#000000" />-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/PvendArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:background="#ffffff"-->
+    <!--                    android:text="@string/pVendArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#000000" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow6"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/etiDataArtInsRicr"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:drawableLeft="@android:drawable/ic_menu_today"-->
+    <!--                    android:text="@string/dataArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#ffffff" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow7"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp" />-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow8"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <TextView-->
+    <!--                    android:id="@+id/etiQuantitaArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:background="#000000"-->
+    <!--                    android:text="@string/quantitaArticolo"-->
+    <!--                    android:textAppearance="?android:attr/textAppearanceLarge"-->
+    <!--                    android:textColor="#ffffff" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow9"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <EditText-->
+    <!--                    android:id="@+id/edit_quantitaArtInsRic"-->
+    <!--                    android:layout_width="match_parent"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_margin="5dp"-->
+    <!--                    android:layout_span="2"-->
+    <!--                    android:digits="0123456789,."-->
+    <!--                    android:imeOptions="actionSend"-->
+    <!--                    android:inputType="numberDecimal"-->
+    <!--                    android:maxLength="9"-->
+    <!--                    android:text="" />-->
+    <!--            </TableRow>-->
+
+    <!--            <TableRow-->
+    <!--                android:id="@+id/tableRow10"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:padding="5dp">-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/ExitRicarica_button"-->
+    <!--                    android:layout_width="130dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_marginLeft="20dp"-->
+    <!--                    android:text="@string/Exit_button_label" />-->
+
+    <!--                <Button-->
+    <!--                    android:id="@+id/SaveRic_button"-->
+    <!--                    android:layout_width="130dp"-->
+    <!--                    android:layout_height="50dp"-->
+    <!--                    android:layout_marginRight="20dp"-->
+    <!--                    android:text="@string/Save_button_label" />-->
+    <!--            </TableRow>-->
+    <!--        </TableLayout>-->
+    <!--    </ScrollView>-->
+    <!--</RelativeLayout>-->
